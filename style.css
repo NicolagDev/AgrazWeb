@@ -474,9 +474,19 @@ footer {
 }
 
 @media (min-width: 901px) {
+  .card--side-img {
+    flex-direction: row;
+  }
+
   .card-img-side {
-    aspect-ratio: 16 / 9;
-    max-height: 320px;
+    width: 45%;
+    height: auto;
+    min-height: 100%;
+    object-fit: cover;
+  }
+
+  .card-body {
+    width: 55%;
   }
 }
 
