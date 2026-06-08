@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agras — Salsa Artesanal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+  </head>
+  <body>
+    <!-- ═══════════ HEADER / NAV ═══════════ -->
+    <header id="top">
+      <div class="header-inner">
+        <a class="brand" href="#top">AGRAS</a>
+
+        <!-- Desktop nav -->
+        <nav class="nav-desktop">
+          <a href="#origen">Origen</a>
+          <a href="#receta">Receta</a>
+          <a href="#bienestar">Bienestar</a>
+        </nav>
+
+        <!-- Hamburger (mobile) -->
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+
+      <!-- Mobile drawer -->
+      <nav class="nav-mobile" id="nav-mobile">
+        <a href="#origen" onclick="closeMenu()">Origen</a>
+        <a href="#receta" onclick="closeMenu()">Receta</a>
+        <a href="#bienestar" onclick="closeMenu()">Bienestar</a>
+      </nav>
+    </header>
+
+    <!-- ═══════════ HERO ═══════════ -->
+    <section class="hero" style="background-image: url(&quot;agras.jpg&quot;)">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-eyebrow">Salsa artesanal andina</p>
+        <h1 class="hero-title">El agraz<br /><em>en su estado más puro</em></h1>
+        <p class="hero-sub">
+          Una fruta de los bosques de niebla, convertida en salsa.
+        </p>
+        <a href="#origen" class="cta">Descubrir</a>
+      </div>
+    </section>
+
+    <!-- ═══════════ SECCIÓN 1 — ORIGEN ═══════════ -->
+    <section class="content-section" id="origen">
+      <div class="section-label">01 — Origen</div>
+      <div class="pair pair--left-wide">
+        <!-- Historia: Ahora solo texto -->
+        <article class="card">
+          <div class="card-body">
+            <h2>Historia</h2>
+            <p>
+              El agraz es una fruta pequeña de color morado oscuro originaria de
+              la región andina de Suramérica. Crece de forma natural en bosques
+              de niebla, lugares fríos y húmedos cubiertos por neblina. Desde
+              antes de la llegada de los españoles, fue recolectada y utilizada
+              por pueblos indígenas como los muiscas y los pastos, quienes la
+              consumían como alimento y la empleaban para aliviar algunas
+              enfermedades. Hoy es apreciada en la gastronomía por su sabor
+              ácido, que combina con comidas dulces y saladas.
+            </p>
+          </div>
+        </article>
+
+        <!-- ¿Por qué se eligió?: Equilibrado con imagen lateral debido a tener menos texto -->
+        <article class="card card--side-img">
+          <img
+            src="bosqueNiebla.jpg"
+            class="card-img-side"
+            alt="Bosque de niebla andino"
+          />
+          <div class="card-body">
+            <h2>¿Por qué se eligió?</h2>
+            <p>
+              Fue escogido por su sabor naturalmente ácido y versátil, ideal
+              para la elaboración de salsas para carnes. Es una fruta con
+              propiedades nutritivas y antioxidantes que aporta un sabor
+              diferente e innovador a la gastronomía. Su combinación entre
+              acidez y dulzor permite crear una salsa que complementa y realza
+              el sabor de distintos tipos de carne.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ═══════════ SECCIÓN 2 — RECETA ═══════════ -->
+    <section class="content-section" id="receta">
+      <div class="section-label">02 — Receta</div>
+      <div class="pair pair--equal">
+        <article class="card card--tall">
+          <div class="card-body">
+            <h2>Ingredientes y cantidades</h2>
+            <ul class="ingredient-list">
+              <li><span class="qty">500 g</span> Agraz fresco</li>
+              <li><span class="qty">200 ml</span> Agua</li>
+              <li><span class="qty">80 g</span> Azúcar</li>
+              <li><span class="qty">1 cdta</span> Sal</li>
+              <li><span class="qty">½ cdta</span> Pimienta negra</li>
+              <li><span class="qty">1</span> Limón (zumo)</li>
+              <li><span class="qty">1 cda</span> Maicena</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="card card--tall">
+          <div class="card-body">
+            <h2>Preparación</h2>
+            <ol class="steps">
+              <li>
+                <span class="step-num">01</span
+                ><span>Lavar y desinfectar los agraz.</span>
+              </li>
+              <li>
+                <span class="step-num">02</span
+                ><span
+                  >Cocinar los frutos con agua a fuego medio hasta que se
+                  ablanden.</span
+                >
+              </li>
+              <li>
+                <span class="step-num">03</span
+                ><span
+                  >Licuar y colar la mezcla para obtener una textura
+                  suave.</span
+                >
+              </li>
+              <li>
+                <span class="step-num">04</span
+                ><span
+                  >Agregar azúcar, sal, pimienta y zumo de limón para equilibrar
+                  el sabor dulce y ácido.</span
+                >
+              </li>
+              <li>
+                <span class="step-num">05</span
+                ><span
+                  >Cocinar nuevamente a fuego bajo y añadir la maicena disuelta
+                  para espesar la salsa.</span
+                >
+              </li>
+              <li>
+                <span class="step-num">06</span
+                ><span>Dejar enfriar y envasar.</span>
+              </li>
+            </ol>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ═══════════ SECCIÓN 3 — BIENESTAR ═══════════ -->
+    <section class="content-section" id="bienestar">
+      <div class="section-label">03 — Bienestar</div>
+      <div class="pair pair--right-wide">
+        <!-- Aporte nutricional: Equilibrado con imagen lateral debido a tener menos texto -->
+        <article class="card card--side-img">
+          <img
+            src="paisajeAndino.jpg"
+            class="card-img-side"
+            alt="Paisaje andino"
+          />
+          <div class="card-body">
+            <h2>Aporte nutricional</h2>
+            <p>
+              El agraz aporta fibra y antioxidantes que benefician la salud. La
+              fibra ayuda a mejorar la digestión y contribuye al control del
+              azúcar y el colesterol en la sangre. Además, sus antioxidantes
+              protegen las células del cuerpo. Contiene antocianinas, compuestos
+              naturales que le dan su color morado característico y potencian su
+              capacidad antioxidante.
+            </p>
+          </div>
+        </article>
+
+        <!-- Aporte ecológico: Ahora solo texto -->
+        <article class="card">
+          <div class="card-body">
+            <h2>Aporte ecológico</h2>
+            <p>
+              El agraz es una especie nativa de los bosques de niebla andinos,
+              ecosistemas reconocidos como reservorios de biodiversidad y
+              reguladores del ciclo hídrico. Su cultivo y aprovechamiento
+              responsable contribuyen a la conservación de estos entornos
+              frágiles y apoyan economías locales sostenibles. Al elegir
+              productos derivados del agraz, se promueve la protección de los
+              paisajes montañosos y se valoran las prácticas de recolección
+              tradicional de comunidades indígenas y campesinas del altiplano
+              colombiano.
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ═══════════ FOOTER ═══════════ -->
+    <footer>
+      <p class="brand footer-brand">AGRAS</p>
+      <p class="footer-sub">Salsa artesanal de los Andes colombianos</p>
+    </footer>
+
+    <script>
+      const btn = document.getElementById("hamburger");
+      const menu = document.getElementById("nav-mobile");
+
+      btn.addEventListener("click", () => {
+        const open = btn.getAttribute("aria-expanded") === "true";
+        btn.setAttribute("aria-expanded", String(!open));
+        menu.classList.toggle("open");
+        btn.classList.toggle("active");
+      });
+
+      function closeMenu() {
+        btn.setAttribute("aria-expanded", "false");
+        menu.classList.remove("open");
+        btn.classList.remove("active");
+      }
+
+      document.addEventListener("click", (e) => {
+        if (!e.target.closest("header")) closeMenu();
+      });
+    </script>
+  </body>
+</html>
