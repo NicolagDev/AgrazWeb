@@ -472,6 +472,24 @@ footer {
   color: var(--mist);
 }
 
+.footer-ref {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.footer-ref a {
+  color: var(--mist);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-ref a:hover {
+  color: var(--accent-2);
+  text-decoration: underline;
+}
+
 @media (min-width: 901px) {
   .card:not(.card--side-img) {
     max-width: 850px;
